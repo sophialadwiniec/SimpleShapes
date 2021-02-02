@@ -1,12 +1,12 @@
-## Empty Example for P5.js
-#### by Scott Kildall
+## Simple Shapes for P5.js
+#### by Sophia Ladwiniec
 
 
 
 ### Overview
-This is a modified version of the p5.js Empty Example that simplifies the directory structure
+This is a simple shapes drawing that contains 10 different shapes
 
 
 ### Technical Details
 
-Modify the sketch.js setup() and draw() functions and begin adding functions!
+Working out as of now
