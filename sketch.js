@@ -57,7 +57,7 @@ function drawEllipses(width1, height1) {
 
 // function that makes the page turn pink if you mouse is on the upper half and blue if your mouse is on the lower half
 function mouseMoved(){
-  if(mouseY < height/2){
+  if((mouseY < height/2) && (mouseX < width/2)){
     r1 = 245;  
     b1 = 190; 
     g1 = 241; 
@@ -73,7 +73,7 @@ function mouseMoved(){
     g_b = 160; 
     t_b = 98;  
  
-  } else {
+  } else if ((mouseY > height/2) && (mouseX > width/2)) {
     r1 = 52; 
     b1 = 224; 
     g1 = 187; 
@@ -88,6 +88,36 @@ function mouseMoved(){
     r_b =112;
     g_b = 94; 
     t_b = 44;
+  } else if ((mouseY < height/2) && (mouseX > width/2)) {
+    r1 = 83; 
+    b1 = 232; 
+    g1 = 145; 
+    t1 = 91;
+
+    r = 14; 
+    b = 227; 
+    g = 103; 
+    t = 89; 
+
+    b_b = 9; 
+    r_b = 102;
+    g_b = 48; 
+    t_b = 40;
+  } else if ((mouseY > height/2) && (mouseX < width/2)) {
+    r1 = 167; 
+    b1 = 86; 
+    g1 = 245; 
+    t1 = 96;
+
+    r = 120; 
+    b = 13; 
+    g = 219; 
+    t = 86; 
+
+    b_b = 46; 
+    r_b = 6;
+    g_b = 99; 
+    t_b = 39;
   }
 }
 
