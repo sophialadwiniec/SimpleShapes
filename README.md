@@ -4,9 +4,8 @@
 
 
 ### Overview
-This is a simple shapes drawing that contains 10 different shapes
+This is a simple shapes drawing that contains over 10 shapes. Move your mouse to the upper part of the page and watch everything turn pink, move it to the lower part of the page and watch everything turn blue. 
 
 
 ### Technical Details
-
-Working out as of now
+Used functions, global variables, for loops, and input. 
