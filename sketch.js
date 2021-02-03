@@ -29,43 +29,29 @@ function draw() {
   
   mouseMoved(); 
 
-  drawEllipses();  
-
-  flower(2,4);
-  flower(4,4); 
-  flower(4/3,4); 
-
-  flower(2,4/3);
-  flower(4,4/3); 
-  flower(4/3,4/3); 
+  for(let x = 1; x < 7; x++){
+    for(let i = 1; i < 7; i++){
+      if(x % 2 != 0){
+        flower((7/i), (7/x)); 
+      }else{
+        drawEllipses((i/7), (x/7))
+      }
+    }
+  }
+  
 }
 
 
 // draws 6 total ellipses 
-function drawEllipses() {
+function drawEllipses(width1, height1) {
   // double ellipse one 
   fill(216,183,250,98);
   // x y width and height 
-  ellipse(width/2,height/2,50);
+  ellipse(width * width1,height * height1,50);
   fill(r,b,g,t);
   // x y width and height 
-  ellipse(width/2,height/2,100,100); 
+  ellipse(width* width1,height * height1,100,100); 
 
-  // double ellipse two 
-  fill(216,183,250,98);
-  // x y width and height 
-  ellipse(width/4,height/2,50);
-  fill(r,b,g,t);
-  // x y width and height 
-  ellipse(width/4,height/2,100,100); 
-
-  // double ellipse three 
-  fill(216,183,250,98);
-  // x y width and height 
-  ellipse(width * (3/4) ,height/2,50);
-  fill(r,b,g,t);
-  // x y width and height 
-  ellipse(width * (3/4) ,height/2,100,100);
 }
 
 
