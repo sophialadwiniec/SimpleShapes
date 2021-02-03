@@ -1,10 +1,4 @@
 
-// Setup code goes here
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  ellipseMode(CENTER); 
- }
-
 // changing color variables for ellipses 
 var r = 0; 
 var b = 0; 
@@ -23,9 +17,14 @@ var r_b = 0;
 var g_b = 0; 
 var t_b = 0; 
 
-// Draw code goes here
-function draw() {
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  ellipseMode(CENTER); 
+ }
+
+
+function draw() {
   background(b_b, r_b, g_b, t_b); 
   
   mouseMoved(); 
@@ -39,11 +38,11 @@ function draw() {
   flower(2,4/3);
   flower(4,4/3); 
   flower(4/3,4/3); 
-
 }
 
+
 // draws 6 total ellipses 
-function drawEllipses(){
+function drawEllipses() {
   // double ellipse one 
   fill(216,183,250,98);
   // x y width and height 
@@ -67,12 +66,11 @@ function drawEllipses(){
   fill(r,b,g,t);
   // x y width and height 
   ellipse(width * (3/4) ,height/2,100,100);
-
 }
+
 
 // function that makes the page turn pink if you mouse is on the upper half and blue if your mouse is on the lower half
 function mouseMoved(){
-
   if(mouseY < height/2){
     r1 = 245;  
     b1 = 190; 
@@ -89,7 +87,7 @@ function mouseMoved(){
     g_b = 160; 
     t_b = 98;  
  
-  }else{
+  } else {
     r1 = 52; 
     b1 = 224; 
     g1 = 187; 
@@ -104,15 +102,15 @@ function mouseMoved(){
     r_b =112;
     g_b = 94; 
     t_b = 44;
-
   }
-
 }
+
 
 // allows for the page to be made bigger or smaller and let the canvas and drawings move with it
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
 
 // draws a flower on the page 
 function flower(width1, height1) {
